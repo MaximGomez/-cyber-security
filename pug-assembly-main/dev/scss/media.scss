@@ -1,0 +1,496 @@
+@import"./vars";
+
+// =================== MEDIA QUERIES ====================== //
+
+/*      For x-small devices      */
+
+@media (max-width: 320px) {
+    .narration__section {
+        margin: 70% 0 10% 0 !important;
+    }
+} 
+
+@media (max-width: 576px) { 
+    .cybersecurity__description-container {
+        margin-top: 5%;
+        p {
+            font-size: 1.25rem !important;
+        }
+    }
+    .header__subtitle h2 {
+        font-size: 1.25rem !important;
+    }
+}
+
+/*      For small devices      */
+
+@media (min-width: 576px) { 
+    .cybersecurity__description-container p {
+        font-size: 1.5rem !important;
+    }
+
+    /*      footer      */
+
+    .footer__content {
+        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__title,
+    .footer__list {
+        align-self: flex-end;
+    }
+    .footer__gratitude h2 {
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .dark__theme {
+        .header__nav-container {
+            background-color: rgba(0, 0, 0, 0.35) !important;
+        }
+    } 
+}
+
+/*      For medium devices      */
+
+@media (min-width: 768px) {
+    .header__title > h1 {
+        font-size: 3rem !important;
+    }
+    .header__subtitle,
+    .cybersecurity__caption > h2 {
+        font-size: 2rem !important;
+    }
+    .header__logo img {
+        width: 3.5rem !important;
+    }
+
+    /*      section      */
+
+    .narration__container,
+    .page__content {
+        width: 75% !important;
+        margin: 0 auto;
+    }
+    .narration__text,
+    .page__text {
+        text-align: center;
+    }
+    .narration__text {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+    .page__description {
+        text-align: center !important;
+    }
+    .virus__section,
+    .scam__section {
+        p {
+            position: relative;
+            padding-left: 1.2rem;
+            &::before {
+                content: '';
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.35);
+                top: 0%;
+                left: 0%;
+            }
+        }
+    }
+    
+    /*      section      */
+
+    .phishing__section {
+        p {
+            position: relative;
+            padding-right: 1.2rem;
+            &::before {
+                content: '';
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.35);
+                top: 0%;
+                right: 0%;
+            }
+        }
+    }
+
+    /*      section      */
+
+    .conclusion__section {
+        text-align: center;
+        .conclusion__title {
+            padding: 0 0 5% 0;
+        }
+    }
+
+    /*      footer      */
+
+    .footer__gratitude h2 {
+        font-size: 4rem !important;
+    }
+
+}
+
+/*      For large devices      */
+
+@media (min-width: 992px) { 
+    .header__title > h1 {
+        font-size: 4rem !important;
+    }
+    .header__subtitle,
+    .cybersecurity__caption > h2 {
+        font-size: 3rem !important;
+    }
+    
+
+    /*      footer      */
+
+    .footer__title h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .footer__gratitude h2 {
+        font-size: 5rem !important;
+    }
+}
+
+/*      For extra large devices      */
+
+@media (max-width: 1199px) { 
+    .header__menu  {
+        display: none !important;
+    }
+    .scroll-header {
+        background: rgba(255, 255, 255, 0.75) !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    /*      header       */
+
+    .header__background {
+        height: 90% !important;
+        top: 65% !important;
+    }
+    .header__nav-container {
+        position: relative !important;
+        .header__menu {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-transform: uppercase;
+            a {
+                position: relative;
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 0%;
+                    height: 0.10rem;
+                    margin-top: 0.25rem;
+                    background-color: #242424;
+                    transition: width 0.3s ease-out;
+                }
+                &:hover::after,
+                &:focus::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .burger__menu {
+        display: none !important;
+    }
+    .nav__additional {
+        width: auto !important;
+    }
+    .header__text {
+        height: 65% !important;
+    }
+
+    // text 
+
+    .page__title h2 {
+        font-size: 5rem !important;
+    }
+    .page__subtitle h3 {
+        font-size: 2rem !important;
+    }
+    .page__description p {
+        font-size: 1.75rem !important;
+    }
+
+    /*      cybersecurity section       */
+
+    .cybersecurity__section {
+        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+        // align-items: center;
+        margin: 15% 0 -15% 0 !important;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0% , -40%);
+            width: 5px;
+            height: 50%;
+            background-color: rgba(100, 100, 100, 0.5);
+            box-shadow: 0 0 10rem 1.25rem rgba(100, 100, 100, 0.5);
+            margin: 0 5%;
+        }
+        .cybersecurity__caption h2 {
+            position: relative;
+            font-size: 5rem !important;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                // transform: translate(0% , -40%);
+                width: 100%;
+                height: 5px;
+                background-color: rgba(100, 100, 100, 0.5);
+                box-shadow: 0 0 10rem 1.25rem rgba(100, 100, 100, 0.5);
+                display: block;
+            }
+        }
+        .cybersecurity__description p {
+            font-size: 1.75rem !important;
+        }
+        .cybersecurity__image {
+            height: 50% !important;
+            position: relative;
+            top: 30%;
+        }
+    }
+
+    /*      narration section       */
+
+    .narration__section {
+        height: 100% !important;
+        position: relative;
+        .narration__content {
+            height: 100% !important;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background: white;
+            width: 5px;
+            height: 45px;
+            top: 10%;
+            left: 5%;
+            transform: rotate(0deg);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background: white;
+            width: 45px;
+            height: 5px;
+            top: 10%;
+            left: 5%;
+            transform: rotate(0deg);
+        }
+    }
+    #particles-js {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background: white;
+            width: 5px;
+            height: 45px;
+            top: calc(90% - 45px);
+            right: 5%;
+            transform: rotate(0deg);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background: white;
+            width: 45px;
+            height: 5px;
+            top: 90%;
+            right: 5%;
+            transform: rotate(0deg);
+        }
+    }
+    .narration__title {
+        margin: 0 !important;
+        h2 {
+            font-size: 5rem !important;
+        }
+    }
+    .narration__content {
+        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        margin: 0 !important;
+        padding: 10% 0 10% 0;
+        height: 100vh !important;
+        .narration__subtitle h2 {
+            font-size: 3rem !important;
+            font-weight: 500 !important;
+            
+        }
+        .narration__description p {
+            font-size: 1.5rem !important;
+        }
+        .narration__container {
+            width: 100% !important;
+            display: flex;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 10% 10%;
+            border-radius: 5%;
+        }
+    }
+
+    /*      page section       */
+
+    .page__section {
+        grid-template-rows: 1fr !important;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem !important;
+        margin: 0 0 5% 0 !important;
+        .page__content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start !important;
+            // justify-content: space-between;
+            width: 100% !important;
+            .page__text {
+                text-align: left !important;
+            }
+            .page__description {
+                margin: 10rem 0 0 0;
+                padding: 0 !important;
+                text-align: left !important;
+            }
+        }
+    }
+    .phishing__section {
+        grid-template-columns: 2fr 1fr;
+        .page__content {
+            order: 1;
+            align-items: flex-end !important;
+            .page__text {
+                text-align: right !important;
+            }
+            .page__description {
+                text-align: right !important;
+            }
+        }
+        .page__image {
+            order: 0;
+        }
+    }
+
+    /*      section       */
+
+    .conclusion__section {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr !important;
+        text-align: left !important;
+        height: 70vh !important;
+        gap: 5rem !important;
+        h2 {
+            font-size: 5rem !important;
+        }
+        .conclusion__title {
+            height: 80%;
+            h2 {
+                position: relative;
+                &::before {
+                    content: '';
+                    width: 100%;
+                    height: 5px;
+                    position: absolute;
+                    background-color: white;
+                    top: 100%;
+                    right: 0%;
+                }
+            }
+        }
+        .conclusion__description {
+            height: 100%;
+            padding: 5% 0 0 0 !important;
+            align-items: center !important;
+        }
+    }
+    .conclusion__description {
+        p {
+            position: relative;
+            padding-right: 1.2rem;
+            &::after {
+                content: '';
+                width: 5px;
+                height: 100%;
+                position: absolute;
+                background-color: white;
+                top: 0%;
+                right: 0%;
+            }
+        }
+    }
+    
+    /*      footer       */
+
+    footer {
+        margin: 15% 0 0 0 !important;
+    }
+    .footer__gratitude h2 {
+        font-size: 8rem !important;
+    }
+    .footer__title h2 {
+        font-size: 3rem !important;
+    }
+
+}
+
+// // /*      For extra extra large devices     */
+
+
+
+
+/*      Height     */
+
+@media (max-height: 414px) {
+    .header__logo {
+        img {
+            width: 3rem !important;
+        }
+    }
+    
+    .cybersecurity__section {
+        margin: 10% 0 50% 0 !important;
+    }
+
+    // section
+
+    .narration__section {
+        margin: 70% 0 10% 0 !important;
+        .narration__title {
+            margin: 0 0 10% 0;
+        }
+    }
+
+    /*      footer      */
+
+    .footer__title {
+        font-size: 1rem !important;
+    }
+    .footer__list a {
+        font-size: .85rem;
+        line-height: 1.2rem !important;
+    }
+}

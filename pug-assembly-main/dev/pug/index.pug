@@ -1,0 +1,191 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/build/css/modern-normalize.min.css")
+        link(rel="stylesheet", href="/build/css/style.min.css")
+        title Кібербезпека
+
+        //- =================== FAVICON ======================
+        link(rel="shortcut icon", href="/img/logo/logo05.png", type="image/x-icon")
+
+        //- =================== REMIX ICON ======================
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
+    body 
+
+        //- ===================  HEADER ======================
+        header.header#header
+            .header__background
+            .header__nav-container
+                nav.header__nav 
+                    .header__logo
+                        a(href="#") 
+                            picture 
+                                source(srcset="/img/logo/logo.png" media="(max-width: 767px)")
+                                img(src="/img/logo/logo.png" alt="logotype")
+                    menu.header__menu 
+                        a(class="header__link" href="#header") вступ
+                        a(class="header__link" href="#cybersecurity") кібербезпека
+                        a(class="header__link" href="#virus") віруси
+                        a(class="header__link" href="#phishing") фішинг
+                        a(class="header__link" href="#scam") скам
+                        a(class="header__link" href="#conclusion") висновки
+                    .nav__additional
+                        .light__mode-container
+                            a(class="light__mode-container" href="#")
+                                img(id="light__theme" src="/img/logo/moon.svg", alt="light mode")
+                        .burger__menu
+                            span
+                            span
+                            span
+                        .burger__container 
+                            menu.burger__inner 
+                                a(class="header__link" href="#header") вступ
+                                a(class="header__link" href="#cybersecurity") кібербезпека
+                                a(class="header__link" href="#virus") віруси
+                                a(class="header__link" href="#phishing") фішинг
+                                a(class="header__link" href="#scam") скам
+                                a(class="header__link" href="#conclusion") висновки
+            .header__content
+                .header__text
+                    .header__title 
+                        h1 базові поняття про кібербезпеку
+                    .header__subtitle 
+                        h2 та як уберегти себе від шахраїв
+                .header__auxiliary-text 
+                    .header__appeal
+                        a(href="#footer") Скролл
+                    .header__date
+                        h3 2021
+                
+        //- ===================  MAIN ======================
+
+        main.main
+            section.cybersecurity__section
+                .cybersecurity__text
+                    .cybersecurity__caption#cybersecurity
+                        h2 Кібербезпека
+                    .cybersecurity__description-container
+                        p Комп'ютерна безпека - досить важлий в сучасному житті, розділ інформаційної безпеки, що характеризує неможливість виникнення шкоди для комп'ютера, та забезпечує безпеку для користувача.
+                .cybersecurity__image 
+                    img(src="/img/background01.png", alt="image")
+
+            //- 
+
+            section.narration__section
+                #particles-js
+                .narration__title#narration
+                    h2 Основні теми
+                .narration__content
+                    .narration__container.narration__first
+                        .narration__text
+                            .narration__subtitle 
+                                h2 Скам
+                            .narration__description 
+                                p Найпопулярніший вид інтернет шахрайства, коли зловмисник спочатку втирається до користувача в довіру, а потім обманює його, найчастіше на матеріальну складову.
+                    .narration__container.narration__second
+                        .narration__text
+                            .narration__subtitle
+                                h2 Віруси
+                            .narration__description 
+                                p Вид шкідливих програм, здатних впроваджуватися в пристрої, та розповсюджувати свої копії різноманітними шляхами, також, робити речі деструктивного характеру, а саме: крадіжка даних, блокування пристрою з метою продажу доступу до нього, рекламні віруси і багато інших.
+                    .narration__container.narration__third
+                        .narration__text
+                            .narration__subtitle 
+                                h2 Фішинг
+                            .narration__description 
+                                p Вид інтернет шахрайства, метою якого є отримання доступу до конфіденційних даних користувачів: логінів, всіляких паролів, тощо.
+
+            //- 
+
+            section.page__section.virus__section#virus
+                .page__content
+                    .page__text 
+                        .page__title
+                            h2 Віруси
+                        .page__subtitle
+                            h3 Як не отримати?
+                    .page__description.virus__description
+                        p Просто меньше блукати по невідомим сайтам, намагатися не завантажувати піратські програми та не клікати по рекламним баннерам, також непоганим рішенням, було б встановити антивірус (Avast, Kaspersky, Avira).  
+                .page__image 
+                    img(src="/img/background02.png", alt="image")
+
+            section.page__section.phishing__section#phishing
+                .page__content.phishing__content
+                    .page__text 
+                        .page__title
+                            h2 Фішинг
+                        .page__subtitle
+                            h3 Як не повестися?
+                    .page__description.phishing__description
+                        p Банально, потрібно меньше вводити своїх даних і якщо вводити, то дивитися куди, а саме, на назву сайту, приклад: privatbank та privetbank, два різних сайти, один - справжній сайт, а інший - шахраїв.   
+                .page__image.phishing__image 
+                    img(src="/img/backround06.jpg", alt="image")
+
+            section.page__section.scam__section#scam
+                .page__content
+                    .page__text 
+                        .page__title
+                            h2 Скам
+                        .page__subtitle
+                            h3 Як уберегтися?
+                    .page__description.scam__description
+                        p Все дуже просто, не вірити не знайомим людям в інтернеті, ні в якому разі не ділитися своїми данними, та передзвонювати тій близькій людині, яка наприклад просить перекинути якусь сумму на карту.  
+                .page__image 
+                    img(src="/img/background07.jpg", alt="image")
+
+            //-
+
+            section.conclusion__section#conclusion
+                .conclusion__title 
+                    h2 Висновки
+                .conclusion__description
+                    p Найголовніше що потрібно пам'ятати, те що не один антивірус не допоможе вам, якщо ви не користуєтеся критичним мисленням, та клацаєте по не відомим посиланням і всюди залишаєте свої дані. Буду дійсно радий, якщо інформація вище колись дійсно вам справді допоможе.
+
+        //- ===================  FOOTER ======================
+        
+        footer.footer#footer
+            .footer__content 
+                .footer__gratitude
+                    h2 дякую вам <br> за перегляд
+                .footer__resources
+                    .footer__title 
+                        h2 використовував
+                    ul.footer__list
+                        li 
+                            a(class="footer_link") Wikipedia
+                        li 
+                            a(class="footer_link") Kaspersky
+                        li 
+                            a(class="footer_link") Avast
+                        li 
+                            a(class="footer_link") ichip
+            .footer__additional
+                .footer__date 
+                    h3 2021
+                .footer__author
+                    h3 Максим Поляковський ®
+
+        #preloader
+            img(src="/gif/1479.gif" alt="preloader")
+
+        //- =================== SCROLL UP ======================
+        
+        a( class="scrollup" id="scroll-up" href="#" ) <i class="ri-arrow-up-s-line scrollup__icon"></i>
+            
+        //- =============== SCROLL REVEAL ANIMATION ===============
+
+        script(defer src="/dev/js/scrollreveal.min.js")
+
+        //- =================== VANILA JS ======================
+
+        script(defer src="/dev/js/particles.min.js")
+        script(defer src="/dev/js/app.js")
+        script(defer src="/build/js/script.min.js")
+
+

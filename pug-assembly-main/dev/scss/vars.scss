@@ -1,0 +1,162 @@
+//- =================== GOOGLE FONTS ======================
+// @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+// =================== VARIABLES CSS ====================== //
+
+$header-height: 3rem;
+
+// $hue-color: rgba(0, 0, 0, 0.5);
+// $black-color: rgba(30, 30, 30, 0.5);
+// $black-color-alt: rgba(100, 100, 100, 0.250);
+// $title-color: rgb(175, 175, 175);
+// $title-color-alt: rgba(175, 175, 175, 0.150);
+// $text-color: rgb(135, 135, 135);
+// $text-color-light: rgba(255, 255, 255, 0.5);
+// $white-color: #fff;
+// $body-color: #000;
+// $container-color: rgba(80, 80, 80, 0.3);
+// $text-gradient: rgba(255, 255, 255, 0.6);
+// $scroll-thumb-color: rgba(230, 230, 230, 0.2);
+// $scroll-thumb-color-alt: rgba(250, 250, 250, 0.3);
+
+// =================== FONTS CSS ====================== //
+
+// $body-font: 'Roboto', sans-serif;
+// $biggest-font-size: 5rem;
+// $bigger-font-size: 3.5rem;
+// $big-font-size: 2rem;
+// $h2-font-size: 1.25rem;
+// $h3-font-size: 1.125rem;
+// $normal-font-size: .938rem;
+// $small-font-size: .813rem;
+// $smaller-font-size: .75rem;
+// $text-line-height: 2rem;
+
+// =================== FONTS WEIGHT ====================== //
+
+// $font-medium: 500;
+// $font-semi-bold: 600;
+
+// =================== Margenes Bottom ====================== //
+
+// $mb-0-5: .5rem;
+// $mb-0-75: .75rem;
+// $mb-1: 1rem;
+// $mb-1-5: 1.5rem;
+// $mb-2: 2rem;
+// $mb-2-5: 2.5rem;
+
+// =================== z-index ====================== //
+
+// $z-tooltop: 10;
+// $z-fixed: 100;
+
+// =================== RESPONSIVE TYPOGRAPHY ====================== //
+
+// @media screen and (min-width: 968px) {
+//     $biggest-font-size: 7.5rem;
+//     $bigger-font-size: 4.5rem;
+//     $big-font-size: 4rem;
+//     $h2-font-size: 1.5rem;
+//     $h2-font-size: 1.25rem;
+//     $normal-font-size: 1rem;
+//     $small-font-size: .875rem;
+//     $smaller-font-size: .813rem;
+// }
+
+// =================== BASE ====================== //
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', serif;
+    color: black;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    // filter: invert(100%);
+    // background: black;
+    overflow-x: hidden;
+    h2 {
+        font-size: 2rem !important;
+    }
+    p {
+        font-size: 1.65rem !important;
+    }
+}
+
+// body {
+//     margin: $header-height 0 0 0;
+//     font-family: $body-font;
+//     font-size: $normal-font-size;
+// }
+
+// h1, h2, h3 {
+//     color: $title-color;
+// }
+
+ul, li, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    // filter: invert(0%) !important;
+    filter: grayscale(100%);
+}
+
+// =================== REUSABLE CSS CLASSES ====================== //
+
+// .section {
+//     padding: 4rem 0 2rem;
+// }
+
+// .section__title {
+//     // font-size: $bigger-font-size;
+//     font-size: $big-font-size;
+//     text-align: center;
+//     margin-bottom: $mb-2-5;
+// }
+
+// .section__title__gradient {
+//     background: $text-gradient;
+//     color: transparent;
+//     background-clip: text;
+// }
+
+// =================== LAYOUT ====================== //
+
+.main {
+    overflow: hidden;
+}
+
+// .container {
+//     max-width: 968px;
+//     margin: 0 $mb-1-5;
+// }
+
+.grid {
+    display: grid;
+}
